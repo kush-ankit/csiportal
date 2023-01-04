@@ -4,10 +4,10 @@ import Navbar from '../components/Navbar'
 
 function Home() {
     return (
-        <>
+        <div name="Home" className='overflow-y-scroll no-scrollbar'>
             <Navbar />
             <Main />
-        </>
+        </div>
     )
 }
 

@@ -5,8 +5,10 @@ module.exports = {
     extend: {
       fontFamily: {
         display: ['Pacifico', "cursive"],
+        SRMCEM: ['East Sea Dokdo', "cursive"],
       },
     },
   },
-  plugins: [],
+  plugins: [    require('tw-elements/dist/plugin')
+],
 }
