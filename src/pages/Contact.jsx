@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiFillFacebook,AiFillLinkedin,AiFillInstagram } from 'react-icons/ai';
+import { AiFillFacebook, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai';
 import { FiMail } from 'react-icons/fi';
 import { BsTelephone } from 'react-icons/bs';
 import { MdLocationPin } from 'react-icons/md';
@@ -7,7 +7,7 @@ import { MdLocationPin } from 'react-icons/md';
 
 function Contact() {
     return (
-        <div className='bg-[#ccc] m-0 flex flex-col justify-center items-center md:h-screen h-full w-full p-10'>
+        <div name='Contact' className='bg-[#ccc] m-0 flex flex-col justify-center items-center md:h-screen h-full w-full md:p-10 p-5'>
             <div className=' h-full w-full rounded-md shadow-2xl flex md:flex-row flex-col justify-center items-center bg-[#06063b]'>
                 <div className='w-3/5 h-full rounded-l-md text-white flex  justify-center items-center'>
                     <div className='md:h-[80%] md:w-[80%]'>
@@ -17,23 +17,23 @@ function Contact() {
                         </div>
                         <div className='md:h-1/3 flex justify-evenly flex-col py-5'>
                             <div className='flex text-1xl hover:text-blue-500'>
-                                <BsTelephone size={20}/>
+                                <BsTelephone size={20} />
                                 <div className='pl-5'>+91 96961 17951</div>
                             </div>
                             <div className='flex text-1xl hover:text-blue-500 py-5'>
-                                <FiMail size={20}/>
+                                <FiMail size={20} />
                                 <div className='pl-5'>er.ankitkush@gmail.com</div>
                             </div>
                             <div className='flex text-1xl hover:text-blue-500'>
-                                <MdLocationPin size={20}/>
+                                <MdLocationPin size={20} />
                                 <div className='pl-5'>Rajpal Lodge,near Omega ,lucknow</div>
                             </div>
                         </div>
                         <div className='md:h-1/3 md:w-[70%] flex md:justify-center items-center'>
                             <div className='flex text-3xl justify-evenly w-full'>
-                                <div className='hover:text-blue-500'><AiFillFacebook/></div>
-                                <a href='https://www.linkedin.com/company/computer-society-of-india-csi-srmcem/' target='_blank' rel="noreferrer" className='hover:text-blue-500'><AiFillLinkedin/></a>
-                                <a href='https://instagram.com/csi_srmcem?igshid=ZDdkNTZiNTM=' target='_blank' rel='noreferrer' className='hover:text-blue-500'><AiFillInstagram/></a>
+                                <div className='hover:text-blue-500'><AiFillFacebook /></div>
+                                <a href='https://www.linkedin.com/company/computer-society-of-india-csi-srmcem/' target='_blank' rel="noreferrer" className='hover:text-blue-500'><AiFillLinkedin /></a>
+                                <a href='https://instagram.com/csi_srmcem?igshid=ZDdkNTZiNTM=' target='_blank' rel='noreferrer' className='hover:text-blue-500'><AiFillInstagram /></a>
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,6 @@ function Contact() {
                     </div>
                 </div>
             </div >
-
         </div >
 
     )

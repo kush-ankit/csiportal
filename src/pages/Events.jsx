@@ -13,7 +13,7 @@ function Events() {
         {
             id: '2',
             Photo: 'https://i.ibb.co/K9MGLBQ/poster-1.png',
-            Name: 'Introduction to Python',
+            Name: `Introduction to Python`,
             Description: 'Introducing the audience to the basics of programming concepts and giving them the foremost knowledge about python and discussing its real-worldapplications.',
             More: 'https://drive.google.com/drive/u/0/folders/17ch2CuJoixkt9Q691rquUDsg7jv-0Yrp',
         },
@@ -34,19 +34,19 @@ function Events() {
     ];
 
     return (
-        <div className='w-full h-fit'>
-            <div className='h-full w-full bg-[#ccc] p-10'>
+        <div name='Events' className='w-full h-fit'>
+            <div className='h-full w-full bg-[#ccc] md:p-10 p-5'>
                 <div className='w-full h-full flex flex-col justify-center items-center'>
                     <div className='text-5xl pb-14 font-ourEvent text-zinc-800 italic'>
                         Our Events
                     </div>
                     <div className='w-full h-full rounded-lg grid md:grid-cols-3 grid-cols-1 gap-10'>
                         {Event.map(({ id, Photo, Name, Description, More }) => (
-                            <div className='bg-white shadow-2xl md:w-4/5 h-screen p-5 flex items-center justify-between flex-col rounded-xl'>
+                            <div key={id} className='bg-white shadow-2xl md:w-4/5 p-9  hover:p-7 duration-300 flex items-center justify-between flex-col rounded-xl'>
                                 <img src={Photo} alt="Event" className='rounded-lg h-1/2' />
                                 <p className='text-3xl font-Heading font-bold '>{Name}</p>
                                 <p>{Description}</p>
-                                <a href={More} target='_blank' rel="noreferrer" className='bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-2 rounded-md cursor-pointer' >More</a>
+                                <a href={More} target='_blank' rel="noreferrer" className='bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-2 rounded-md cursor-pointer hover:ring-2 ring-black' >Know more</a>
                             </div>
                         ))}
                     </div>
