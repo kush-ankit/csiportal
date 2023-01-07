@@ -1,9 +1,9 @@
-import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <div className="overflow-y-scroll no-scrollbar">
-      <Home />
+      <Contact/>
     </div>
   );
 }
