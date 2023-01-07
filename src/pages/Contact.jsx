@@ -7,20 +7,20 @@ import { MdLocationPin } from 'react-icons/md';
 
 function Contact() {
     return (
-        <div className='bg-[#ccc] m-0 flex flex-col justify-center items-center h-screen w-full p-10'>
-            <div className=' h-full w-full rounded-md shadow-2xl flex flex-row justify-center items-center bg-[#06063b]'>
-                <div className='w-3/5 h-full rounded-l-md text-white flex justify-center items-center'>
-                    <div className='h-[80%] w-[80%]'>
-                        <div className='h-1/3 w-fit flex flex-col justify-evenly'>
-                            <div className='text-5xl pb-5'>Let's Talk</div>
-                            <div className='text-[#ccc]'>Fill up the form and our Team will get back <br /> to you within 24 hours. </div>
+        <div className='bg-[#ccc] m-0 flex flex-col justify-center items-center md:h-screen h-full w-full p-10'>
+            <div className=' h-full w-full rounded-md shadow-2xl flex md:flex-row flex-col justify-center items-center bg-[#06063b]'>
+                <div className='w-3/5 h-full rounded-l-md text-white flex  justify-center items-center'>
+                    <div className='md:h-[80%] md:w-[80%]'>
+                        <div className='md:h-1/3 w-fit flex flex-col justify-evenly'>
+                            <div className='text-5xl py-5'>Let's Talk</div>
+                            <div className='text-[#ccc]'>Fill up the form and our Team will get back <br className='hidden md:flex' /> to you within 24 hours. </div>
                         </div>
-                        <div className='h-1/3 flex justify-evenly flex-col'>
+                        <div className='md:h-1/3 flex justify-evenly flex-col py-5'>
                             <div className='flex text-1xl hover:text-blue-500'>
                                 <BsTelephone size={20}/>
                                 <div className='pl-5'>+91 96961 17951</div>
                             </div>
-                            <div className='flex text-1xl hover:text-blue-500'>
+                            <div className='flex text-1xl hover:text-blue-500 py-5'>
                                 <FiMail size={20}/>
                                 <div className='pl-5'>er.ankitkush@gmail.com</div>
                             </div>
@@ -29,16 +29,16 @@ function Contact() {
                                 <div className='pl-5'>Rajpal Lodge,near Omega ,lucknow</div>
                             </div>
                         </div>
-                        <div className='h-1/3 w-[70%] flex justify-center items-center'>
+                        <div className='md:h-1/3 md:w-[70%] flex md:justify-center items-center'>
                             <div className='flex text-3xl justify-evenly w-full'>
                                 <div className='hover:text-blue-500'><AiFillFacebook/></div>
-                                <div className='hover:text-blue-500'><AiFillLinkedin/></div>
-                                <div className='hover:text-blue-500'><AiFillInstagram/></div>
+                                <a href='https://www.linkedin.com/company/computer-society-of-india-csi-srmcem/' target='_blank' rel="noreferrer" className='hover:text-blue-500'><AiFillLinkedin/></a>
+                                <a href='https://instagram.com/csi_srmcem?igshid=ZDdkNTZiNTM=' target='_blank' rel='noreferrer' className='hover:text-blue-500'><AiFillInstagram/></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='w-2/5 h-full rounded-r-md p-10 '>
+                <div className='md:w-2/5 w-full h-full rounded-r-md md:p-10 pt-5'>
                     <div className='h-full w-full bg-white rounded-lg flex justify-center items-center'>
                         <div className='h-[80%] w-[80%]'>
                             <form action="">

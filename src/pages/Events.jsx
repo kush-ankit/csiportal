@@ -2,9 +2,6 @@ import React from 'react'
 
 function Events() {
 
-
-
-
     const Event = [
         {
             id: '1',
@@ -43,9 +40,9 @@ function Events() {
                     <div className='text-5xl pb-14 font-ourEvent text-zinc-800 italic'>
                         Our Events
                     </div>
-                    <div className='w-full h-full rounded-lg grid grid-cols-3 gap-10'>
+                    <div className='w-full h-full rounded-lg grid md:grid-cols-3 grid-cols-1 gap-10'>
                         {Event.map(({ id, Photo, Name, Description, More }) => (
-                            <div className='bg-white shadow-2xl w-4/5 h-screen p-5 flex items-center justify-between flex-col rounded-xl'>
+                            <div className='bg-white shadow-2xl md:w-4/5 h-screen p-5 flex items-center justify-between flex-col rounded-xl'>
                                 <img src={Photo} alt="Event" className='rounded-lg h-1/2' />
                                 <p className='text-3xl font-Heading font-bold '>{Name}</p>
                                 <p>{Description}</p>
