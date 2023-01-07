@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         display: ['Pacifico', "cursive"],
         SRMCEM: ['East Sea Dokdo', "cursive"],
+        Heading: ['Kanit', 'sans-serif'],
       },
     },
   },
