@@ -12,7 +12,7 @@ function Contact() {
                     <div className='w-full h-1/3 flex flex-row justify-end'>
                         <div className=' w-3/4 h-full'>
                             <a href="www.facebook.com" target='_blank'><FiFacebook size={30} /></a>
-                            <div></div>
+                            <div>linked in</div>
                             <div></div>
                             <div></div>
                         </div>
