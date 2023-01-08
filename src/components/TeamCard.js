@@ -12,7 +12,7 @@ function TeamCard(props) {
         />
         <div className="about md:pt-5 flex flex-col items-center">
           <h1 className="name">{props.name}</h1>
-          <h1 className="post hidden hover:flex">{props.post}</h1>
+          <h1 className="post">{props.post}</h1>
         </div>
       </div></div>
   )
