@@ -31,7 +31,7 @@ function Navbar() {
   ]
 
   return (
-    <div className='text-white rounded-md w-full bg-slate-400'>
+    <div className='text-gray-700 rounded-md w-full fixed'>
       <div className='p-3 flex flex-row justify-between items-center' >
         <div className='text-5xl pl-5 font-display flex flex-row items-baseline'>
           <div>CSI</div>

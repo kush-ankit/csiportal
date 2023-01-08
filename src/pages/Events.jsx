@@ -30,6 +30,13 @@ function Events() {
             Name: 'Introduction to Flutter',
             Description: 'Introducing the field basics of hybrid application development with the introduction of Flutter.',
             More: 'https://drive.google.com/drive/u/0/folders/1jmxfjWsuCdsD7uP28bfcHCgfo4V_rT5V',
+        },
+        {
+            id: '2',
+            Photo: 'https://i.ibb.co/K9MGLBQ/poster-1.png',
+            Name: `Introduction to Python`,
+            Description: 'Introducing the audience to the basics of programming concepts and giving them the foremost knowledge about python and discussing its real-worldapplications.',
+            More: 'https://drive.google.com/drive/u/0/folders/17ch2CuJoixkt9Q691rquUDsg7jv-0Yrp',
         }
     ];
 

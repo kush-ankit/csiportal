@@ -27,33 +27,34 @@ const teamList = [
     img: "https://i.ibb.co/RBQpygq/farhana.png",
     name: "FARHANA KHAN",
     post: "✪ TREASURER",
-    
+
   },
   {
-    img: "https://i.ibb.co/pxvxmx2/ankit.png",
+    img: "https://i.ibb.co/SwRjTxk/167212281343-removebg.png",
     name: "ANKIT KUSHWAHA",
     post: "✪ WEB-MASTER",
   },
-  
+
 
 ];
 function Team() {
   return (
-    <div className="main ">
+    <div className="main w-full h-screen flex flex-col justify-evenly ">
       <div className="header">
         <a href="index.html">
           <img
             src="https://i.ibb.co/yhtxD0n/CSIsrmcem-1.png"
             alt="CSIsrmcem-1"
+            className="scale-150 h-60"
           />
         </a>
       </div>
-      <div className="team-list">
-      <ul class="flex flex-wrap">
-      {teamList.map((obj) => {
-        return <li ><TeamCard  img={obj.img} name={obj.name} post={obj.post} /></li>;
-      })}
-      </ul>
+      <div className="team-list ">
+        <ul class="flex flex-col md:flex-row">
+          {teamList.map((obj) => {
+            return <li ><TeamCard img={obj.img} name={obj.name} post={obj.post} /></li>;
+          })}
+        </ul>
       </div>
     </div>
   );

@@ -2,12 +2,12 @@ import React from 'react'
 
 function Home() {
     return (
-        <div className='p-10'>
-            <div name="Home" className='w-full h-screen overflow-y-scroll no-scrollbar bg-[url("https://i.ibb.co/7gFhGr4/oie-Yr4bc-Rzln-Wtb.jpg")] rounded-lg'>
-                <div className='bg-black bg-opacity-60 w-full h-full overflow-hidden backdrop-blur-sm duration-300'>
-                    <div className='w-full h-full p-10'>
+        <div className='bg-[url("https://i.ibb.co/kS83NFw/2.png")] p-10 h-screen w-screen'>
+            <div name="Home" className='h-screen w-full overflow-y-scroll no-scrollbar  rounded-lg'>
+                <div className=' bg-opacity-60 w-full h-full overflow-hidden duration-300 '>
+                    <div className='w-full h-full p-10 flex justify-center items-center'>
                         <div className='w-full h-full flex items-center'>
-                            <div className='md:w-[40%] w-full h-[80%] bg-white rounded-lg bg-opacity-50'>
+                            <div className='md:w-[40%] w-full h-[80%] rounded-lg'>
                                 <div className='h-full w-full p-10'>
                                     <div className='h-full w-full'>
                                         <h1 className='md:text-5xl text-2xl font-semibold italic font-Heading md:pb-4 pb-2'>Computer Society of India</h1>
@@ -16,6 +16,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
