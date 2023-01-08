@@ -39,7 +39,7 @@ const teamList = [
 ];
 function Team() {
   return (
-    <div className="main w-full h-screen flex flex-col justify-evenly ">
+    <div className="main w-full md:h-screen h-fit flex flex-col justify-evenly ">
       <div className="header">
         <a href="index.html">
           <img

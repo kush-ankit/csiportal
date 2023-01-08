@@ -8,7 +8,7 @@ import { MdLocationPin } from 'react-icons/md';
 function Contact() {
     return (
         <div name='Contact' className=' m-0 flex flex-col justify-center items-center md:h-screen h-full w-full md:p-10 p-5'>
-            <div className=' h-full w-full rounded-md shadow-2xl flex md:flex-row flex-col justify-center items-center bg-[#06063b]'>
+            <div className=' h-full w-full rounded-md shadow-2xl flex md:flex-row flex-col justify-center items-center bg-blue-900'>
                 <div className='w-3/5 h-full rounded-l-md text-white flex  justify-center items-center'>
                     <div className='md:h-[80%] md:w-[80%]'>
                         <div className='md:h-1/3 w-fit flex flex-col justify-evenly'>
