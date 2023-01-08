@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
     return (
-        <div className='bg-[url("https://i.ibb.co/kS83NFw/2.png")] p-10 h-screen w-screen'>
+        <div className=' p-10 h-screen w-screen'>
             <div name="Home" className='h-screen w-full overflow-y-scroll no-scrollbar  rounded-lg'>
                 <div className=' bg-opacity-60 w-full h-full overflow-hidden duration-300 '>
                     <div className='w-full h-full p-10 flex justify-center items-center'>
