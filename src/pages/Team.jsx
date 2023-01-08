@@ -39,7 +39,7 @@ const teamList = [
 ];
 function Team() {
   return (
-    <div className="main">
+    <div className="main ">
       <div className="header">
         <a href="index.html">
           <img
@@ -49,9 +49,9 @@ function Team() {
         </a>
       </div>
       <div className="team-list">
-      <ul>
+      <ul class="flex flex-wrap">
       {teamList.map((obj) => {
-        return <li><TeamCard className="card-list" img={obj.img} name={obj.name} post={obj.post} /></li>;
+        return <li ><TeamCard  img={obj.img} name={obj.name} post={obj.post} /></li>;
       })}
       </ul>
       </div>
