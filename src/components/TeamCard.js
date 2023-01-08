@@ -10,7 +10,7 @@ function TeamCard(props) {
       alt="Untitled-design-2"
       border="0"
     />
-  <div className="about">
+  <div className="about md:pt-5 flex flex-col items-center">
     <h1 className="name">{props.name}</h1>
     <h1 className="post">{props.post}</h1>
   </div>
