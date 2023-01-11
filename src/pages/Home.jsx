@@ -8,7 +8,7 @@ function Home() {
                 <div className=' bg-opacity-60 w-full h-full overflow-hidden duration-300 '>
                     <div className='w-full h-full p-10 flex justify-center items-center'>
                         <div className='w-full h-full flex items-center'>
-                            <div className='md:w-[40%] w-full h-[80%] rounded-lg'>
+                            <div className='md:w-[80%] w-full h-[80%] rounded-lg'>
                                 <div className='h-full w-full md:p-10'>
                                     <div className='h-full w-full'>
                                         <h1 className='md:text-5xl text-3xl font-semibold italic font-Heading md:pb-4 pb-2'>Computer Society of India</h1>
@@ -16,6 +16,9 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div className='w-full h-full flex items-center'>
+                            <img src="https://i.ibb.co/SvMqy65/graphic-designer-job-description-removebg-preview.png" alt="img" className='w-full'/>
                         </div>
                     </div>
                 </div>
