@@ -16,12 +16,12 @@ const teamList = [
   {
     img: "https://i.ibb.co/rKB0vZp/divyansh.png",
     name: "DIVYANSH SRIVASTAVA",
-    post: "✪ SECRATRY",
+    post: "✪ SECRETARY",
   },
   {
     img: "https://i.ibb.co/6Yh3n0W/ketan.png",
     name: "KETAN KUMAR",
-    post: "✪ VICE-SECRATRY",
+    post: "✪ VICE-SECRETARY",
   },
   {
     img: "https://i.ibb.co/RBQpygq/farhana.png",
