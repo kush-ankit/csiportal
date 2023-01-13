@@ -1,32 +1,39 @@
 import React from 'react'
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { Link } from 'react-scroll';
 
 function Navbar() {
   const navBar = [
     {
       id: 1,
-      link: 'About us',
-
+      link: 'Home',
+      goto: 'Home'
     },
     {
       id: 2,
-      link: 'Home',
+      link: 'Team',
+      goto: 'Team'
+
     },
     {
       id: 3,
-      link: 'Events'
+      link: 'Events',
+      goto: 'Event',
     },
     {
       id: 4,
-      link: 'Gallery'
+      link: 'Gallery',
+      goto: 'Gallery',
     },
     {
       id: 5,
-      link: 'Contact us'
+      link: 'Contact us',
+      goto: 'Contact'
     },
     {
       id: 6,
-      link: 'Feedback'
+      link: 'Feedback',
+      goto: 'Feedback'
     }
   ]
 
@@ -37,10 +44,10 @@ function Navbar() {
           <div>CSI</div>
           <div className='pl-2 text-3xl font-SRMCEM'>SRMCEM</div>
         </div>
-        <div className='hidden lg:flex flex-row justify-evenly w-1/2'>
+        <div className='hidden lg:flex flex-row justify-evenly w-1/2 '>
           {
-            navBar.map(({ id, link }) => (
-              <div className='cursor-pointer hover:text-blue-500' key={id}>{link}</div>
+            navBar.map(({ id, link, goto }) => (
+              <Link to={goto} smooth className='cursor-pointer hover:text-blue-500 hover:bg-white px-6 py-3 rounded-3xl' key={id}>{link}</Link>
             ))
           }
 

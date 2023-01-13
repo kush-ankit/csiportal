@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
     return (
-        <div className=' md:p-10 md:h-screen w-screen'>
+        <div name='Home' className=' md:p-10 md:h-screen w-screen'>
             <img src="https://i.ibb.co/D96qPDx/2ewf.png" alt="back" className='fixed h-screen w-screen -z-50 md:hidden' />
             <div name="Home" className='h-screen w-full overflow-y-scroll no-scrollbar  rounded-lg'>
                 <div className=' bg-opacity-60 w-full h-full overflow-hidden duration-300 '>

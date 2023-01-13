@@ -41,7 +41,7 @@ function Events() {
     ];
 
     return (
-        <div name='Events' className='w-full h-fit'>
+        <div name='Event' className='w-full h-fit'>
             <div className='h-full w-full  md:p-10 p-5'>
                 <div className='w-full h-full flex flex-col justify-center items-center'>
                     <div className='text-5xl pb-14 font-ourEvent text-zinc-800 italic'>
