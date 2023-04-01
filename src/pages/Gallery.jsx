@@ -39,10 +39,10 @@ function Gallery() {
 
 
   return (
-    <div name='Gallery' className='w-full h-fit md:p-10 flex flex-col justify-center items-center gap-4'>
+    <div name='Gallery' className='w-full h-fit md:p-10 flex flex-col justify-center items-center pb-20 md:pb-0'>
       <h1 className='text-5xl pb-14 font-ourEvent text-zinc-800 italic'>Gallery</h1>
-      <div className=' w-full h-full'>
-        <div className='grid grid-cols-3 gap-4'>
+      <div className=' w-[30%] h-full'>
+        <div className='grid md:grid-rows-2 grid-cols-1 grid-flow-row gap-4 px-5'>
           {images.map(({ id, goto, about }) => {
             return (
               <ImgComp id={id} goto={goto} about={about} />

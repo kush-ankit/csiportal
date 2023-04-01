@@ -39,7 +39,7 @@ const teamList = [
 ];
 function Team() {
   return (
-    <div name='Team' className="main w-full md:h-screen h-fit flex flex-col justify-evenly ">
+    <div name='Team' className="main w-full md:h-screen h-fit flex flex-col justify-evenly pb-20 md:pb-0">
       <div className="header">
         <a href="index.html">
           <img
@@ -50,7 +50,7 @@ function Team() {
         </a>
       </div>
       <div className="team-list ">
-        <ul class="flex flex-col md:flex-row">
+        <ul class="md:flex grid grid-cols-2 md:flex-row">
           {teamList.map((obj) => {
             return <li ><TeamCard img={obj.img} name={obj.name} post={obj.post} /></li>;
           })}
