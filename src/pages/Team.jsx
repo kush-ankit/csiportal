@@ -34,23 +34,26 @@ const teamList = [
     name: "ANKIT KUSHWAHA",
     post: "✪ WEB-MASTER",
   },
+  {
+    img: "https://firebasestorage.googleapis.com/v0/b/csi-srmcem.appspot.com/o/Aditya%20Verma.png?alt=media&token=f71b1e18-5da7-47e8-a4f2-8d6699696b47",
+    name: "ADITYA VERMA",
+    post: "✪ DESIGNER",
+  },
 
 
 ];
 function Team() {
   return (
-    <div name='Team' className="main w-full md:h-screen h-fit flex flex-col justify-evenly pb-20 md:pb-0">
+    <div name='Team' className="main w-full h-fit flex flex-col justify-evenly pb-20 md:pb-0 bg-slate-600 bg-opacity-30">
       <div className="header">
-        <a href="index.html">
-          <img
-            src="https://i.ibb.co/yhtxD0n/CSIsrmcem-1.png"
-            alt="CSIsrmcem-1"
-            className="scale-150 h-60"
-          />
-        </a>
+        <img
+          src="https://i.ibb.co/yhtxD0n/CSIsrmcem-1.png"
+          alt="CSIsrmcem-1"
+          className="scale-150 h-40"
+        />
       </div>
       <div className="team-list ">
-        <ul class="md:flex grid grid-cols-2 md:flex-row">
+        <ul class="grid grid-cols-2 md:grid-cols-4 gap-5">
           {teamList.map((obj) => {
             return <li ><TeamCard img={obj.img} name={obj.name} post={obj.post} /></li>;
           })}

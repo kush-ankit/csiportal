@@ -38,16 +38,16 @@ function Navbar() {
   ]
 
   return (
-    <div className='text-gray-700 rounded-md w-full md:fixed'>
+    <div className='text-white w-full md:fixed bg-slate-100 bg-opacity-20'>
       <div className='p-3 flex flex-row justify-between items-center' >
-        <div className='text-5xl pl-5 font-display flex flex-row items-baseline'>
+        <div className='text-3xl pl-3 font-display flex flex-row items-baseline text-blue-600'>
           <div>CSI</div>
-          <div className='pl-2 text-3xl font-SRMCEM'>SRMCEM</div>
+          <div className='text-3xl font-SRMCEM'>SRMCEM</div>
         </div>
         <div className='hidden lg:flex flex-row justify-evenly w-1/2 '>
           {
             navBar.map(({ id, link, goto }) => (
-              <Link to={goto} smooth className='cursor-pointer hover:text-blue-500 hover:bg-white px-6 py-3 rounded-3xl' key={id}>{link}</Link>
+              <Link to={goto} smooth className='cursor-pointer hover:text-white hover:bg-zinc-600 px-6 py-3 rounded-3xl' key={id}>{link}</Link>
             ))
           }
 

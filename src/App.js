@@ -1,4 +1,3 @@
-import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact";
 import Events from "./pages/Events";
 import Gallery from "./pages/Gallery";
@@ -9,10 +8,9 @@ function App() {
   return (
     <div className="overflow-y-scroll no-scrollbar">
       <img src="https://i.ibb.co/D96qPDx/2ewf.png" alt="back" className='fixed h-screen w-screen -z-50 md:hidden' />
-      <Navbar />
       <Home />
-      <Team />
       <Events />
+      <Team />
       <Gallery />
       <Contact />
     </div>

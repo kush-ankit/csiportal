@@ -33,6 +33,67 @@ function Gallery() {
       goto: 'https://i.ibb.co/K9MGLBQ/poster-1.png',
       about: 'Pollution'
     },
+    {
+      id: 4,
+      goto: 'https://i.ibb.co/4TdZ5Mm/Whats-App-Image-2022-12-21-at-8-42-20-PM.jpg',
+      about: 'Pollution'
+    },
+    {
+      id: 5,
+      goto: 'https://i.ibb.co/k2mG0qz/Screenshot-2022-10-15-195041.png',
+      about: 'Pollution'
+    },
+    {
+      id: 6,
+      goto: 'https://i.ibb.co/K9MGLBQ/poster-1.png',
+      about: 'Pollution'
+    },
+    {
+      id: 4,
+      goto: 'https://i.ibb.co/4TdZ5Mm/Whats-App-Image-2022-12-21-at-8-42-20-PM.jpg',
+      about: 'Pollution'
+    },
+    {
+      id: 5,
+      goto: 'https://i.ibb.co/k2mG0qz/Screenshot-2022-10-15-195041.png',
+      about: 'Pollution'
+    },
+    {
+      id: 6,
+      goto: 'https://i.ibb.co/K9MGLBQ/poster-1.png',
+      about: 'Pollution'
+    },
+    {
+      id: 4,
+      goto: 'https://i.ibb.co/4TdZ5Mm/Whats-App-Image-2022-12-21-at-8-42-20-PM.jpg',
+      about: 'Pollution'
+    },
+    {
+      id: 5,
+      goto: 'https://i.ibb.co/k2mG0qz/Screenshot-2022-10-15-195041.png',
+      about: 'Pollution'
+    },
+    {
+      id: 6,
+      goto: 'https://i.ibb.co/K9MGLBQ/poster-1.png',
+      about: 'Pollution'
+    },
+    {
+      id: 4,
+      goto: 'https://i.ibb.co/4TdZ5Mm/Whats-App-Image-2022-12-21-at-8-42-20-PM.jpg',
+      about: 'Pollution'
+    },
+    {
+      id: 5,
+      goto: 'https://i.ibb.co/k2mG0qz/Screenshot-2022-10-15-195041.png',
+      about: 'Pollution'
+    },
+    {
+      id: 6,
+      goto: 'https://i.ibb.co/K9MGLBQ/poster-1.png',
+      about: 'Pollution'
+    },
+    
 
   ]
 
@@ -40,9 +101,9 @@ function Gallery() {
 
   return (
     <div name='Gallery' className='w-full h-fit md:p-10 flex flex-col justify-center items-center pb-20 md:pb-0'>
-      <h1 className='text-5xl pb-14 font-ourEvent text-zinc-800 italic'>Gallery</h1>
-      <div className=' w-[30%] h-full'>
-        <div className='grid md:grid-rows-2 grid-cols-1 grid-flow-row gap-4 px-5'>
+      <h1 className='text-5xl p-14 font-ourEvent text-zinc-800 italic'>Gallery</h1>
+      <div className=' w-full h-full p-5 md:p-10'>
+        <div className='grid grid-cols-2 gap-2 md:grid-cols-5 '>
           {images.map(({ id, goto, about }) => {
             return (
               <ImgComp id={id} goto={goto} about={about} />
