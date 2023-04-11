@@ -1,20 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { RxCross2 } from 'react-icons/rx';
 import { Link } from 'react-scroll';
 
 function Navbar() {
 
-  function handleClick(){
-    if(icon){
-      
-    }
-  }
+  var icon = true;
 
-
-  var [icon, setIcon] = useState()
-
-  icon = false;
 
   const navBar = [
     {
@@ -51,7 +43,7 @@ function Navbar() {
   ]
 
   return (
-    <div className='w-full md:fixed '>
+    <div className='w-full md:fixed'>
       <div className='p-3 flex flex-row md:justify-evenly justify-between items-center' >
         <div className='text-3xl pl-3 font-display flex flex-row items-baseline text-blue-600 bg-white py-1 px-6 rounded-3xl'>
           <div>CSI</div>
@@ -65,7 +57,7 @@ function Navbar() {
           }
 
         </div>
-        <div className='lg:hidden pr-3 text-white' onClick={handleClick} >
+        <div className='lg:hidden pr-3 text-white'>
           {icon ? <RxHamburgerMenu size={30} /> : <RxCross2 size={30} />}
         </div>
       </div>

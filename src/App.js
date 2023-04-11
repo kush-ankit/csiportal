@@ -1,3 +1,4 @@
+import Add from "./components/Add";
 import Contact from "./pages/Contact";
 import Events from "./pages/Events";
 import Gallery from "./pages/Gallery";
@@ -13,6 +14,7 @@ function App() {
       <Team />
       <Gallery />
       <Contact />
+      <Add/>
     </div>
   );
 }

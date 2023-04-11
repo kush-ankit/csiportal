@@ -21,7 +21,6 @@ function Home() {
                 setCurrent(() => images[(counter.current) % images.length])
                 counter.current += 1;
             }, 5000)
-
             return () => clearInterval(scrollInterval)
         }
     )
@@ -30,14 +29,14 @@ function Home() {
     return (
         <div name='Home' className='md:h-[80vh] h-[60vh] w-full'>
             <img src={current} alt="img" className='absolute -z-50 h-[60vh] md:h-[80vh] md:w-full' />
-            <div className='w-full h-full bg-gradient-to-r from-black '>
+            <div className='w-full h-full'>
                 <Navbar />
                 <div className='w-full h-full flex items-center '>
                     <div className='md:w-3/5 h-full rounded-lg m-auto '>
                         <div className='h-full w-full md:p-10 p-5 '>
-                            <div className='h-full w-full text-white flex flex-col justify-center'>
-                                <h1 className='md:text-5xl text-3xl font-semibold italic font-Heading md:pb-4 pb-2'>Computer Society <br className='md:hidden' /> of India</h1>
-                                <p className=' py-5 md:text-lg text-xs'>The Computer Society of India (CSI) is a non-profit voluntary organization established in 1965. It is the largest, professional and non-governmental organization in India which works in the field of Information Technology (IT). It was established with the aim of advancing the knowledge and practice of Computer Science and related subjects.<div className='hidden md:flex'> It has more than 100,000 members, including professionals, educators and students, drawn from industry, academia and research organizations. The society provides a platform for IT professionals to share their knowledge and experience and to keep abreast of the latest trends in the industry.</div></p>
+                            <div className='h-full w-full text-white flex flex-col justify-center gap-3 '>
+                                <h1 className='md:text-5xl text-3xl font-semibold italic font-serif md:pb-4 pb-2 text-blue-600 backdrop-blur-md rounded-t-lg'>Computer Society <br className='md:hidden' /> of India</h1>
+                                <p className=' py-5 md:text-lg text-xs pl-2 backdrop-blur-md rounded-b-lg'>The Computer Society of India (CSI) is a non-profit voluntary organization established in 1965. It is the largest, professional and non-governmental organization in India which works in the field of Information Technology (IT). It was established with the aim of advancing the knowledge and practice of Computer Science and related subjects.<div className='hidden md:flex'> It has more than 100,000 members, including professionals, educators and students, drawn from industry, academia and research organizations. The society provides a platform for IT professionals to share their knowledge and experience and to keep abreast of the latest trends in the industry.</div></p>
                             </div>
                         </div>
                     </div>

@@ -48,12 +48,12 @@ function Events() {
                     <div className='text-5xl pb-14 font-ourEvent text-zinc-800 italic'>
                         Our Events
                     </div>
-                    <div className='w-full h-full rounded-lg grid md:grid-cols-3 grid-cols-1 gap-10'>
+                    <div className='w-full md:h-full  rounded-lg grid md:grid-cols-3 grid-cols-2 md:gap-10 gap-4 '>
                         {Event.map(({ id, Photo, Name, Description, More }) => (
-                            <div key={id} className='bg-white shadow-2xl shadow-violet-500 md:w-4/5 p-9  hover:p-7 duration-300 flex items-center justify-between flex-col rounded-xl'>
+                            <div key={id} className=' shadow-2xl shadow-violet-500 md:w-4/5 md:p-9 p-2 flex items-center justify-between flex-col rounded-xl hover:scale-110 duration-300'>
                                 <img src={Photo} alt="Event" className='rounded-lg h-1/2' />
-                                <p className='text-3xl font-Heading font-bold '>{Name}</p>
-                                <p>{Description}</p>
+                                <p className='md:text-3xl textxl font-Heading font-bold '>{Name}</p>
+                                <p className='hidden md:flex'>{Description}</p>
                                 <a href={More} target='_blank' rel="noreferrer" className='bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-2 rounded-md cursor-pointer hover:ring-2 ring-black' >Know more</a>
                             </div>
                         ))}
