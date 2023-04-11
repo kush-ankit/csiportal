@@ -52,7 +52,7 @@ function Navbar() {
         <div className='hidden lg:flex flex-row justify-evenly w-1/2 bg-white p-1 rounded-3xl'>
           {
             navBar.map(({ id, link, goto }) => (
-              <Link to={goto} smooth className='cursor-pointer hover:text-white hover:bg-zinc-600 px-6 py-2 rounded-3xl' key={id}>{link}</Link>
+              <Link to={goto} smooth className='cursor-pointer hover:text-white hover:bg-zinc-600 hover:scale-150 duration-300 px-6 py-2 rounded-3xl' key={id}>{link}</Link>
             ))
           }
 

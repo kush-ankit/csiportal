@@ -42,8 +42,8 @@ function Contact() {
                             </div>
                         </div>
                     </div>
-                    <div className='md:w-2/5 w-full h-full rounded-r-md md:p-10 backdrop-blur-lg'>
-                        <div className='h-full w-full  flex justify-center items-center'>
+                    <div className='md:w-2/5 w-full h-full rounded-r-md md:p-10 backdrop-blur-lg md:backdrop-blur-none'>
+                        <div className='h-full w-full  flex justify-center items-center bg-white rounded-md'>
                             <div className='h-[80%] w-[80%]'>
                                 <form action="">
                                     <p className='py-3'>Your Name</p>
