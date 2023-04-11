@@ -11,15 +11,15 @@ function TeamCard(props) {
           className='scale-150 opacity-90 pt-10 w-fit md:w-60'
         />
       </div>
-      <div className="card hover:scale-125 duration-300 flex flex-col justify-center items-center ">
+      <div className="card group-hover:scale-125 duration-300 flex flex-col justify-center items-center ">
         <img
           src={props.img}
           alt="Untitled-design-2"
           border="0"
         />
         <div className="about md:pt-5 flex flex-col items-center ">
-          <h1 className="name">{props.name}</h1>
-          <h1 className="post md:text-transparent md:group-hover:text-black">{props.post}</h1>
+          <h1 className="name text-sm">{props.name}</h1>
+          <h1 className="post text-sm md:text-transparent md:group-hover:text-black">{props.post}</h1>
         </div>
       </div>
     </div>

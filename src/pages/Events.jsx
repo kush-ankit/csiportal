@@ -2,6 +2,7 @@ import React from 'react'
 
 function Events() {
 
+
     const Event = [
         {
             id: '1',

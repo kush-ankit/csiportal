@@ -1,35 +1,35 @@
-
-.header{
+.header {
     margin-left: auto;
     margin-right: auto;
 }
-.about{
-   margin-top: 0;
-   text-align: center;
-   margin-top: -2px;
- 
-   
+
+.about {
+    margin-top: 0;
+    text-align: center;
+    margin-top: -2px;
+
+
 }
-.name{
-display: flex;
-font-size: auto;
-font-weight: 500;
+
+.name {
+    display: flex;
+    font-weight: 500;
 }
-.post{
+
+.post {
     font-size: auto;
     font-weight: 700;
 }
-.card{
+
+.card {
     text-align: center;
     height: auto;
     width: auto;
 }
 
-.card img{
+.card img {
     border-radius: 50%;
     height: auto;
     width: 200px;
-   
-}
 
- 
+}

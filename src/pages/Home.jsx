@@ -1,10 +1,36 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Navbar from "../components/Navbar";
 
 function Home() {
+
+    const counter = useRef(0);
+    const [current, setCurrent] = useState()
+
+
+
+    const images = [
+        "https://i.ibb.co/6Ym07d5/IMG3.jpg",
+        "https://i.ibb.co/7gFhGr4/oie-Yr4bc-Rzln-Wtb.jpg",
+        "https://i.ibb.co/k2mG0qz/Screenshot-2022-10-15-195041.png",
+        "https://i.ibb.co/4TdZ5Mm/Whats-App-Image-2022-12-21-at-8-42-20-PM.jpg",
+    ]
+    useEffect(
+        () => {
+            let scrollInterval = null;
+            scrollInterval = setInterval(() => {
+                setCurrent(() => images[(counter.current) % images.length])
+                counter.current += 1;
+            }, 5000)
+
+            return () => clearInterval(scrollInterval)
+        }
+    )
+
+
     return (
-        <div name='Home' className='md:h-[80vh] h-[80vh] w-full bg-[url("https://i.ibb.co/4TdZ5Mm/Whats-App-Image-2022-12-21-at-8-42-20-PM.jpg")] '>
-            <div className='w-full h-full bg-gradient-to-r from-black'>
+        <div name='Home' className='md:h-[80vh] h-[60vh] w-full'>
+            <img src={current} alt="img" className='absolute -z-50 h-[60vh] md:h-[80vh] md:w-full' />
+            <div className='w-full h-full bg-gradient-to-r from-black '>
                 <Navbar />
                 <div className='w-full h-full flex items-center '>
                     <div className='md:w-3/5 h-full rounded-lg m-auto '>

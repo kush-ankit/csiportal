@@ -44,7 +44,7 @@ const teamList = [
 ];
 function Team() {
   return (
-    <div name='Team' className="main w-full h-fit flex flex-col justify-evenly pb-20 md:pb-0 bg-slate-600 bg-opacity-30">
+    <div name='Team' className="main w-full h-fit flex flex-col justify-evenly pb-20 md:pb-0 bg-slate-200 bg-opacity-30 overflow-hidden md:overflow-visible">
       <div className="header">
         <img
           src="https://i.ibb.co/yhtxD0n/CSIsrmcem-1.png"
