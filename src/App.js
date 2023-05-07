@@ -14,7 +14,7 @@ function App() {
       <Team />
       <Gallery />
       <Contact />
-      <Add/>
+      <Add />
     </div>
   );
 }
