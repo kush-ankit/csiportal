@@ -20,17 +20,17 @@ function Contact() {
                                 <div className='text-[#ccc]'>Fill up the form and our Team will get back <br className='hidden md:flex' /> to you within 24 hours. </div>
                             </div>
                             <div className='md:h-1/3 flex justify-evenly flex-col py-5'>
-                                <div className='flex text-1xl hover:text-blue-500'>
+                                <div className='flex text-1xl '>
                                     <BsTelephone size={20} />
-                                    <div className='pl-5'>+91 96961 17951</div>
+                                    <div className='pl-5 hover:text-blue-500'>+91 96961 17951</div>
                                 </div>
-                                <div className='flex text-1xl hover:text-blue-500 py-5'>
+                                <div className='flex text-1xl  py-5'>
                                     <FiMail size={20} />
-                                    <div className='pl-5'>er.ankitkush@gmail.com</div>
+                                    <p><a href="mailto:csisrmcem@gmail.com" className='pl-5 hover:text-blue-500'>csisrmcem@gmail.com</a></p>
                                 </div>
-                                <div className='flex text-1xl hover:text-blue-500'>
+                                <div className='flex text-1xl '>
                                     <MdLocationPin size={20} />
-                                    <div className='pl-5'>Rajpal Lodge,near Omega ,lucknow</div>
+                                    <div className='pl-5 hover:text-blue-500'>CSI Club, SRMCEM College, Lucknow </div>
                                 </div>
                             </div>
                             <div className='md:h-1/3 md:w-[70%] flex md:justify-center items-center'>
@@ -45,7 +45,7 @@ function Contact() {
                     <div className='md:w-2/5 w-full h-full rounded-r-md md:p-10 backdrop-blur-lg md:backdrop-blur-none'>
                         <div className='h-full w-full  flex justify-center items-center bg-white rounded-md'>
                             <div className='h-[80%] w-[80%]'>
-                                <form action="">
+                                <form action="https://getform.io/f/01dec400-fa79-4f57-bc16-9087c3c8e089" method="POST">
                                     <p className='py-3'>Your Name</p>
                                     <input name='Name' type="text" placeholder='Fullname' className='w-full p-2 border-2 bg-slate-200 rounded-sm hover:border-blue-500 outline-none' />
                                     <p className='py-3'>Your Email</p>

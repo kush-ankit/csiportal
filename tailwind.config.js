@@ -7,7 +7,8 @@ module.exports = {
         display: ['Pacifico', "cursive"],
         SRMCEM: ['East Sea Dokdo', "cursive"],
         Heading: ['Kanit', 'sans-serif'],
-        ourEvent: ['Rowdies', 'cursive']
+        ourEvent: ['Rowdies', 'cursive'],
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },

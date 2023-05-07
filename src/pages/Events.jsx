@@ -5,41 +5,32 @@ function Events() {
 
     const Event = [
         {
-            id: '1',
+            id: 1,
             Photo: 'https://i.ibb.co/30BJ2kX/NATIONAL-POLLUTION-CONTROL-DAY-Card-Landscape-6-x-4-in.png',
             Name: 'National Pollution Control Day',
             Description: 'To spread awareness about pollution control among the youth generation of Engineers by the means of quiz and poster making competition.',
-            More: 'https://drive.google.com/drive/u/0/folders/1lI1Ekqi4ErBjvWFj_CphtLQTeQULBH2d',
         },
         {
-            id: '2',
+            id: 2,
             Photo: 'https://i.ibb.co/K9MGLBQ/poster-1.png',
             Name: `Introduction to Python`,
             Description: 'Introducing the audience to the basics of programming concepts and giving them the foremost knowledge about python and discussing its real-worldapplications.',
-            More: 'https://drive.google.com/drive/u/0/folders/17ch2CuJoixkt9Q691rquUDsg7jv-0Yrp',
         },
         {
-            id: '3',
+            id: 3,
             Photo: 'https://i.ibb.co/S3tvPLC/poster.png',
             Name: 'Hacktoberfest 2022',
             Description: 'Introduced students to getting started with Open-Source contributions with the help of beginner friendly event, Hacktoberfest 2022.',
-            More: 'https://drive.google.com/drive/u/0/folders/12JoyXZvl445vgVj8rgrq1TsdUE23LA3W',
         },
         {
-            id: '4',
+            id: 4,
             Photo: 'https://i.ibb.co/jGWKLfD/poster-flutter.png',
             Name: 'Introduction to Flutter',
             Description: 'Introducing the field basics of hybrid application development with the introduction of Flutter.',
-            More: 'https://drive.google.com/drive/u/0/folders/1jmxfjWsuCdsD7uP28bfcHCgfo4V_rT5V',
-        },
-        {
-            id: '2',
-            Photo: 'https://i.ibb.co/K9MGLBQ/poster-1.png',
-            Name: `Introduction to Python`,
-            Description: 'Introducing the audience to the basics of programming concepts and giving them the foremost knowledge about python and discussing its real-worldapplications.',
-            More: 'https://drive.google.com/drive/u/0/folders/17ch2CuJoixkt9Q691rquUDsg7jv-0Yrp',
         }
     ];
+
+
 
     return (
         <div name='Event' className='w-fit h-fit'>
@@ -54,7 +45,7 @@ function Events() {
                                 <img src={Photo} alt="Event" className='rounded-lg h-1/2 hover:scale-110 duration-500' />
                                 <p className='md:text-3xl textxl font-Heading font-bold '>{Name}</p>
                                 <p className='hidden md:flex'>{Description}</p>
-                                <a href={More} target='_blank' rel="noreferrer" className='bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-2 rounded-md cursor-pointer hover:ring-2 ring-black' >Know more</a>
+                                <button id={id} className='bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-2 rounded-md cursor-pointer hover:ring-2 ring-black md:hidden' >Know more</button>
                             </div>
                         ))}
                     </div>
